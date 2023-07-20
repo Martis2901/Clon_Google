@@ -1,0 +1,186 @@
+body{
+    /*margen*/
+    margin: 0;
+/*margen pa'dentro*/
+    padding: 0;
+    /*cambiar el tamaño del texto*/
+    font-size: 13px;
+    /*tipografia del texto*/
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/**********************************************/
+/****************************************/
+/********************************/
+/* Navegación */
+
+header{
+    background-color: rgb(253, 246, 251);
+    width: 100%;
+    height: 80px;
+}
+
+
+header nav{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: flex-end;
+}
+
+header nav .nav-right-section{
+    width: 250px;
+    /*eliminar viñetas de la lista*/
+    list-style: none;
+     /*flexibilidad a nuestro componente*/
+    display: flex;
+    /*centramos horizontalmente los elementos dentro de la lista*/
+    justify-content: center;
+    /*centramos verticalmente la lista*/
+    align-items: center;
+}
+
+a{
+    /*eliminar linea debajo de los textos*/
+    text-decoration: none;
+}
+
+nav .nav-right-section a{
+    color: rgb(21, 21, 21);
+    /*margen derecho entre textos*/
+    margin-right: 20px;
+}
+
+nav .nav-right-section .menu{
+    background-image: url(https://img.icons8.com/ios-glyphs/90/000000/circled-menu.png) ;
+    width: 20px;
+    height: 20px;
+    /*modifica el tamaño de la imagen al tamaño del contenedor*/
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+nav .nav-right-section img{
+/*redondear bordes*/
+    border-radius: 100px;
+    /*margen izquierdo (separa menu imagen) */
+    margin-left: 20px;
+width: 35px;
+}
+
+/**********************************************/
+/****************************************/
+/********************************/
+/* Main */
+main{
+    margin-top: 130px;
+    text-align: center;
+}
+/*seccion logo*/
+main .main-logo{
+    width: 530px;
+    /*settea 0 al margen de arriba y abajo y el auto settea en automatico bordes de los lados*/
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+/*logo9*/
+main .main-logo img{
+    height: 120px;
+}
+
+/*seccion input*/
+main .main-input{
+    background-color: rgb(255, 255, 250);
+    width: 550px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+/*caja con bordes redondeados*/
+main .main-input-container{
+    /*borde, pide 3 valores que son: anchura de la linea, estilo y color*/
+   /*style: dotted, solid, insert*/
+    border: 1px solid #dfe1e5;
+    /*bordes redondeados*/
+    border-radius: 20px;
+    width: 525px;
+    /*componentes flexibles y que se muevan*/
+    /*centrado*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*cajita de input*/
+main .main-input input{
+    height: 35px;
+    border: none;
+    /*desaparece el borde cuando posicionas el cursor*/
+    outline: none;
+    width: 430px;
+}
+
+main .main-input .search-icon{
+    background-image: url(https://seekicon.com/free-icon-download/search_20.svg);
+    background-size: contain;
+    padding-left: 6%;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 15px;
+}
+
+main .main-input .micro-icon{
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/726px-Google_mic.svg.png);
+    height: 17px;
+    width: 17px;
+    background-size: contain;
+    background-position: center;
+    padding-left: 1%;
+    background-repeat: no-repeat;
+}
+
+main .main-input .cam-icon{
+    background-image: url(https://static.wikia.nocookie.net/logopedia/images/2/2b/Google_Lens_2021.svg);
+    height: 17px;
+    width: 17px;
+    background-size: contain;
+    background-position: center;
+    padding-left: 1%;
+    background-repeat: no-repeat;
+    padding-right: 5%;
+}
+
+/*botones*/
+main .main-buttons{
+    width: 550px;
+    /*vertical / horizontal*/
+    margin: 0 auto;
+}
+
+main .main-buttons div{
+    /*inline block esten en la mismalinea*/
+    display: inline-block;
+}
+
+main .main-buttons button{
+    background-color: #f8f9fa;
+    border: none;
+    height: 40px;
+    font-size: 16px;
+    color: #3c4043;
+    padding: 0 15px;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+/*efecto de sombra al pasar el mouse por encima*/
+main .main-input-container:hover{
+   /*offset-x | offset-y | blur-radius | color*/
+    box-shadow: 0px 0px 5px #20212447;
+}
+
+main .main-buttons button:hover{
+    color: #202124;
+    border: 1px solid #dadce0;
+    box-shadow: 0px 1px 1px #20212447;
+}
+
